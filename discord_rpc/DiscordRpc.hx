@@ -106,7 +106,7 @@ class DiscordRpc
 // INTERNAL EXTERNS
 
 @:keep
-//@:include('linc_discord_rpc.h')
+@:include('linc_discord_rpc.h')
 #if !display
 @:build(linc.Linc.touch())
 @:build(linc.Linc.xml('discord_rpc'))
@@ -164,7 +164,7 @@ private extern class DiscordRpcExterns
 
 // TYPEDEFS AND STUFF
 
-//@:include('linc_discord_rpc.h')
+@:include('linc_discord_rpc.h')
 @:native('DiscordJoinRequest')
 @:structAccess
 @:unreflective
@@ -208,10 +208,10 @@ typedef DiscordPresenceOptions = {
     @:optional var spectateSecret : String;
     @:optional var joinSecret     : String;
     @:optional var instance : Int;
-	@:optional var button1Label:String;
-	@:optional var button1Url:String;
-	@:optional var button2Label:String;
-	@:optional var button2Url:String;
+	@:optional var button1Label : String;
+	@:optional var button1Url : String;
+	@:optional var button2Label : String;
+	@:optional var button2Url : String;
 }
 
 @:enum abstract Reply(Int) from Int to Int {
