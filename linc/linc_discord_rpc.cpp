@@ -58,6 +58,10 @@ namespace linc
             discordPresence.joinSecret     = _joinSecret;
             discordPresence.spectateSecret = _spectateSecret;
             discordPresence.instance = _instance;
+			discordPresence.button1Label = _button1Label;
+			discordPresence.button1Url = _button1Url;
+			discordPresence.button2Label = _button2Label;
+			discordPresence.button2Url = _button2Url;
             Discord_UpdatePresence(&discordPresence);
         }
 

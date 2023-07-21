@@ -23,6 +23,8 @@ namespace linc
             int64_t _startTimestamp, int64_t _endTimestamp,
             const char* _largeImageKey, const char* _largeImageText,
             const char* _smallImageKey, const char* _smallImageText,
+			const char* _button1Label, const char* _button1Url,
+			const char* _button2Label, const char* _button2Url,
             const char* _partyID, int _partySize, int _partyMax, const char* _matchSecret, const char* _joinSecret, const char* _spectateSecret,
             int8_t _instance);
         extern void respond(const char* _userID, int _reply);
